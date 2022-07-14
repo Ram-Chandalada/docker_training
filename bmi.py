@@ -5,7 +5,7 @@ import numpy as np
 st.title('BMI CALCULATOR')
 
 from PIL import Image
-img= Image.open("./bmi.jpg")
+img= Image.open("/tmp/bmi.jpg")
 st.image(img)
 
 st.info("What is BMI?")
@@ -57,24 +57,24 @@ else:
 
 if bmi>35:
 	if (gender=="Female"):
-		img1=Image.open("./fat_woman.jpg")
+		img1=Image.open("/tmp/fat_woman.jpg")
 		st.image(img1,width=200)
 	else:	
-		img2=Image.open("./fat_man.jpg")
+		img2=Image.open("/tmp/fat_man.jpg")
 		st.image(img2,width=200)
 else :
         if bmi<16:
                 if (gender=="Female"):
-                        img3=Image.open("./thin_woman.jpg")
+                        img3=Image.open("/tmp/thin_woman.jpg")
                         st.image(img3,width=200)
                 else:	
-                        img4=Image.open("./thin_man.jpg")
+                        img4=Image.open("/tmp/thin_man.jpg")
                         st.image(img4,width=200)
         else:
                 if (gender=="Male"):
-                        img5=Image.open("./healthy_boy.jpg")
+                        img5=Image.open("/tmp/healthy_boy.jpg")
                         st.image(img5,width=200)
                 else :
-                        img6=Image.open("./healthy_woman.jpg")
+                        img6=Image.open("/tmp/healthy_woman.jpg")
                         st.image(img6,width=200)
                 
