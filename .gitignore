@@ -1,0 +1,9 @@
+/env
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info
+*.swp
+*.swo
+*.DS_Store
+*.bak

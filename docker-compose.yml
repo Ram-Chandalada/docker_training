@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  docker-training:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8051:8501'
+    extra_hosts:
+      - host.docker.internal:host-gateway
